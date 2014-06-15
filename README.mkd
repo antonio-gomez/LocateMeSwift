@@ -1,0 +1,14 @@
+# LocateMe Swift
+
+A simple localization app developed in Swift for iOS 8.
+
+![LocateMeSwift](http://i.imgur.com/MUVIZYq.png?1)
+
+# Notes
+
+You are able to display the current user location and drop a pin with the help of MapKit and CoreLocation Frameworks.
+
+# Author
+
+- Antonio Gomez-Maldonado - [@fractma](https://twitter.com/fractma)
+

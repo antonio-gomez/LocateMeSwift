@@ -12,6 +12,6 @@ You are able to display the current user location and drop a pin with the help o
 
 - Antonio Gomez-Maldonado - [@fractma](https://twitter.com/fractma)
 
-## License
+# License
 
 [MIT License](http://opensource.org/licenses/MIT) - Fork, modify and use however you want.

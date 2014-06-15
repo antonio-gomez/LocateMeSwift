@@ -61,7 +61,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     // Error locating the user
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         
-        println("Erro locating the user: \(error)")
+        println("Error locating the user: \(error)")
     }
     
     // Drop pin using curret user location

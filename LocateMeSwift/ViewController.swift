@@ -13,7 +13,7 @@ import CoreLocation
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     // Main variables
-    @IBOutlet var mapView : MKMapView
+    @IBOutlet var mapView : MKMapView?
     let locationManager = CLLocationManager()
     var currentLocation : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
     
@@ -21,7 +21,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mapView.showsUserLocation = true
+        mapView!.showsUserLocation = true
         locationManager.delegate = self
         showUserLocation(self)
     }
@@ -39,16 +39,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     // User authorized to show his current location
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: AnyObject[]!) {
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         
         // Getting the user coordinates
         currentLocation = locationManager.location.coordinate
         
         // Setting the zoom region
-        var zoomRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(currentLocation, 250, 250)
+        var zoomRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(currentLocation, 500, 500)
         
         // Zoom the map to the current user location
-        mapView.setRegion(zoomRegion, animated: true)
+        mapView!.setRegion(zoomRegion, animated: true)
     }
     
     // User changed the authorization to use location
@@ -77,10 +77,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         currentAnnotation.title = "Your Are Here!"
         
         // Adding the annotation to the map
-        mapView.addAnnotation(currentAnnotation)
+        mapView!.addAnnotation(currentAnnotation)
         
         // Displaying the pin title on drop
-        mapView.selectAnnotation(currentAnnotation, animated: true)
+        mapView!.selectAnnotation(currentAnnotation, animated: true)
     }
 
 }

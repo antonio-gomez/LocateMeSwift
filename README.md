@@ -1,7 +1,9 @@
 ## LocateMe Swift
 
+![swift-image](https://img.shields.io/badge/swift-2.0-ff8a00.svg)
 ![version-image](https://img.shields.io/badge/version-3.0.0-ff69b4.svg)
 ![license-image](https://img.shields.io/badge/license-MIT-ff69b4.svg)
+
 
 
 #### Requirements
@@ -12,16 +14,19 @@ CoreLocation Framework
 MapKit Framework
 
 
+
 #### Description
 -----------
 
 A simple localization app developed in Swift 2 for iOS 9. Designed to run on a 4-inch iOS device.
 
 
+
 #### Preview
 --------
 
 ![LocateMeSwift](http://i.imgur.com/MUVIZYq.png?1)
+
 
 
 #### Changelog
@@ -40,9 +45,11 @@ A simple localization app developed in Swift 2 for iOS 9. Designed to run on a 4
 *    Initial development.
 
 
+
 --------
 ## License
+
 [MIT][0] © [Antonio Gomez][1] - Fork, modify and use however you want.
 
-[1]: http://opensource.org/licenses/MIT
-[0]: http://antoniogomez.me/
+[0]: http://opensource.org/licenses/MIT
+[1]: http://antoniogomez.me/
